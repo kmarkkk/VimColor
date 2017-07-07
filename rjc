@@ -1,0 +1,4 @@
+#! /bin/bash
+
+djc $1
+cjc $1 $2

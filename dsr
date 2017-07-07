@@ -1,0 +1,3 @@
+#! /bin/bash
+
+borgcfg production/borg/travel-assistant/tg/destination_explore_dev.borg --vars user=travel-assistant,de_service_name=$2,superroot_mpm_version=$1 down --skip_confirmation

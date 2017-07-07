@@ -1,0 +1,5 @@
+#! /bin/bash
+
+changelist=$(srcfs get_readonly)
+echo $changelist
+blaze mpm -c opt --mpm_build_arg=--label=$1 --mpm_build_arg=--label=cl/$changelist --mpm_build_arg=--ephemeral //travel/assistant:travel_assistant_superroot_mpm 

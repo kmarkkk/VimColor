@@ -1,0 +1,3 @@
+#! /bin/bash
+
+blaze build -c opt knowledge/answers/tools/induce_and_train.sar && borgcfg knowledge/answers/tools/induce_and_train.borg --vars="output_dir=/cns/pc-d/home/wenxuancai/$1, charged_user=travel-assistant,generate_knowledge_grammar=true" --wait_done --skip_confirmation reload

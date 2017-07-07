@@ -1,0 +1,3 @@
+#! /bin/bash
+
+blaze mpm -c opt --mpm_build_arg=--label=$1 --mpm_build_arg=--ephemeral //travel/assistant/autocomplete:travel_assistant_generate_suggest_mpm

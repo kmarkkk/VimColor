@@ -1,0 +1,3 @@
+#! /bin/bash
+
+/usr/bin/tap_presubmit -p answers,superroot,superroot.opt.binary,superroot.opt,superroot.experimental,superroot.data,superroot.borgcfg,superroot.opt.binary,travel_assistant_backend,superroot.deps_blacklist  -c $1 --base_cl=head --nosafety_checks

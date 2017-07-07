@@ -1,0 +1,9 @@
+#! /bin/bash
+
+blaze-bin/knowledge/server/tools/gsr_stubby \
+	--bns=$1 \
+	--method=/TravelService.GetTravelLocationCollection \
+	--input_proto_type=superroot.travel.TravelLocationCollectionRequest \
+	--input_file=$(pwd)/$2 \
+	--generic_request_params_extension="opts:  'peek:**$3**'" \
+	--html_output > /tmp/out.html  

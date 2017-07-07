@@ -1,0 +1,5 @@
+#! /bin/bash
+
+g4 sync @$1 && \
+borgcfg production/borg/travel-assistant/tg/destination_explore_nightly.borg reload destination-explore-nightly.qrewrite_stack.web --user=travel-assistant --borguser=travel-assistant --skip_confirmation && \
+borgcfg production/borg/travel-assistant/sa/destination_explore_nightly.borg reload destination-explore-nightly.qrewrite_stack.web --user=travel-assistant --borguser=travel-assistant --skip_confirmation

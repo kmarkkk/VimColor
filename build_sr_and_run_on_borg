@@ -1,0 +1,7 @@
+##!/bin/bash
+
+echo mpm name: $1
+
+blaze mpm -c opt --mpm_build_arg=--label=$1 --mpm_build_arg=--ephemeral //travel/assistant:travel_assistant_superroot_mpm;
+
+borgcfg $EBG up --vars=sr_mpm=$1 --skip_confirmation

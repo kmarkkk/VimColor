@@ -1,0 +1,4 @@
+#! /bin/bash
+
+/google/data/ro/teams/ke-tools/gooru init;
+/google/data/ro/teams/ke-tools/gooru edit --build_superroot --experiment_patch_cls=$1 && /google/data/ro/teams/ke-tools/gooru ke_eval

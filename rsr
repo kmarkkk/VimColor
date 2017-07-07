@@ -1,0 +1,7 @@
+#! /bin/bash
+
+if [ $# -gt 2 ]; then
+  borgcfg production/borg/travel-assistant/tg/destination_explore_dev.borg --vars user=travel-assistant,de_service_name=$2,superroot_mpm_version=$1,query_prod_qrewrite=true reload --skip_confirmation
+else
+  borgcfg production/borg/travel-assistant/tg/destination_explore_dev.borg --vars user=travel-assistant,de_service_name=$2,superroot_mpm_version=$1,query_prod_qrewrite=false reload --skip_confirmation
+fi

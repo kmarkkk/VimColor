@@ -1,0 +1,4 @@
+#! /bin/bash
+
+/google/data/ro/teams/ke-tools/ke_eval_sr \
+--experiment_cls=$1

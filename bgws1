@@ -1,0 +1,5 @@
+#! /bin/bash
+
+changelist=$(srcfs get_readonly)
+echo $changelist
+rabbit mpm -c opt --discard_analysis_cache --nojava_header_compilation --noexperimental_java_header_compilation_direct_classpath --strict_proto_deps=off --mpm_build_arg=--label=$1 --mpm_build_arg=--label=cl/$changelist --mpm_build_arg=--ephemeral //travel/assistant:travel_assistant_gws_gws_mpm

@@ -1,0 +1,3 @@
+#! /bin/bash
+
+rabbit mpm -c opt --mpm_build_arg=--label=$1 --mpm_build_arg=--ephemeral //travel/assistant:travel_assistant_gws_gws_mpm //travel/assistant:travel_assistant_gws_localized_startgws_mpm //travel/assistant:travel_assistant_gws_localized_sffe_hotdata_mpm 

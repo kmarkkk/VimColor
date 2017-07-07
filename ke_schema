@@ -1,0 +1,4 @@
+#! /bin/bash
+
+gooru=/google/data/ro/teams/ke-tools/gooru
+$gooru init && $gooru edit --experiment_patch_cls=$1 --build_schema && $gooru proxy && $gooru ke_eval

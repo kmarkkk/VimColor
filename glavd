@@ -1,0 +1,3 @@
+#! /bin/bash
+
+gqui from `fileutil cat /namespace/visual-dictionary/license_aware/requirements/LATEST`/en/* proto quality_chameleon.VisualRefinementThumbnail --key=$1
